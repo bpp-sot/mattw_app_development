@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ServaadaLogo from '/workspaces/mattw_app_development/Servaada Logo.png'
 import './App.css'
 
 function App() {
@@ -7,9 +8,10 @@ function App() {
   return (
     <>
       <div class="header">
-        <img id="logoImage" src="Servaada Logo.png" alt="Servaada Logo" />
+        <img id="logoImage" src={ServaadaLogo} alt="Servaada Logo" />
         <h1 id ="pageTitle"> File Comparison Tool </h1>
       </div>
+      <br></br>
       <br></br>
       <br></br>
       <div class="topnav">
@@ -21,7 +23,7 @@ function App() {
       <div id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button</div>
       <div class ="fileuploads">   
          <h2 class ="upload-titles">Upload Source File</h2>
-          <input id="srcFileUpload" class ="fileUploads" type="file" name="srcFileUpload" />
+          <input id="srcFileUpload" class = "fileUploads" type="file" name="srcFileUpload" />
           <input id="srcFileSubmit" class = "buttons" type="submit" value="Upload"  onclick="alert('File Submitted')" />
           <br></br>
           <h2 class ="upload-titles">Upload Target File</h2>
