@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form, InputGroup, Button} from 'react-bootstrap'
+import {useNavigate} from "react-router-dom"
 import ServaadaLogo from '/workspaces/mattw_app_development/Servaada Logo.png'
 import './App.css'
 
@@ -26,16 +28,14 @@ function Login(){
               <Form.Control type="password" placeholder="Enter Password" />
             </Form.Group>
             <br></br>
-            <Button variant="secondary" type="submit">
+            <Button variant="secondary" type="submit" link = "">
               Submit
             </Button>
           </Form>
         </>
     )
 
-function LoginClicked(){
-  alert("Details Submitted");
-}    
+
 }
 
 export default Login
