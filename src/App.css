@@ -28,6 +28,7 @@ color: rgb(255, 255, 255);
 }
 
 .header #pageTitle {
+  top: 15px;
   color: #198754;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -51,7 +52,7 @@ color: rgb(255, 255, 255);
 .topnav {
   background-color: #198754;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   width: 100%;
 }
 
@@ -64,6 +65,7 @@ color: rgb(255, 255, 255);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -100,6 +102,9 @@ color: rgb(255, 255, 255);
 }
 
 /* Login Page Styles */
-#LoginForm{
+.LoginForm{
+  margin: auto;
+  width: 50%;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }

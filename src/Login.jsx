@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {Form, InputGroup, Button} from 'react-bootstrap'
 import ServaadaLogo from '/workspaces/mattw_app_development/Servaada Logo.png'
 import './App.css'
 
@@ -7,7 +8,7 @@ function Login(){
 
     return(
         <>
-          <div class="header">
+          <div className="header">
             <img id = "logoImage" src = {ServaadaLogo} alt = "Servaada Logo" />
             <h1 id ="pageTitle"> File Comparison Tool </h1>
           </div>
@@ -15,15 +16,20 @@ function Login(){
           <br></br>
           <br></br>
           <div id ="pageinformation">Please enter your login details below:</div>
-          <form id = "LoginForm" class = "LoginForm">
-            <label for = "UsernameInput">Username:</label><br></br>
-            <input id = "UsernameInput" type = "text"></input><br></br>
+          <Form>
+            <Form.Group className="LoginForm" controlId="formBasicEmail">
+              <Form.Label>Username</Form.Label>
+              <Form.Control type="username" placeholder="Enter Username" />
+            </Form.Group>
+            <Form.Group className="LoginForm" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Enter Password" />
+            </Form.Group>
             <br></br>
-            <label for ='PasswordInput'>Password:</label><br></br>
-            <input id = "PasswordInput" type = "password"></input><br></br>
-            <br></br>
-            <button id = "LoginButton" class = "buttons" onClick = {LoginClicked()}>Submit</button>
-          </form>
+            <Button variant="secondary" type="submit">
+              Submit
+            </Button>
+          </Form>
         </>
     )
 
