@@ -1,55 +1,5 @@
 
-# Practical 1 Handout: Writing a Living README
-
-## Module: App Development (Level 6)
-**Topic 8: Documentation**  
-**Practical Focus:** Creating professional project documentation using Markdown.
-
----
-
-## Learning Objectives
-
-By the end of this practical, you will be able to:
-
-- Explain the purpose of a README file in a software project.
-- Create clear and structured documentation for your application.
-- Use Markdown to format technical documentation.
-- Commit documentation updates to GitHub.
-- Understand how documentation supports your final portfolio assessment.
-
----
-
-## What Is a README?
-
-A README is the **front door** of your project. It tells:
-
-- What your app does  
-- Why it exists  
-- How to run it  
-- What it depends on  
-- What still needs improving  
-
-Good documentation improves:
-- Maintainability
-- Collaboration
-- Professional credibility
-- Portfolio quality
-
----
-
-## Practical Task Overview
-
-You will update or create a **README.md** file inside your **GitHub repository**.
-
-Your README must include the core professional sections listed below.
-
-This task contributes directly to your portfolio documentation evidence.
-
----
-
-## Required README Sections
-
-Your README **must include** the following sections:
+# App Development Project
 
 ### 1. Project Overview
 
@@ -65,14 +15,14 @@ Your README **must include** the following sections:
 Explain:
 
 - To clone the project, navigate to the Github homepage associated with this project: https://github.com/bpp-sot/mattw_app_development
-- - Copy the HTTPS link from the green "Code" button in Github
-- - 
+- Copy the HTTPS link from the green "Code" button in Github
 
 - To run the app locally, run the following command in Github Codespaces Terminal:
 
 ```bash
 npm run dev
 ```
+
 - Click on the local host link that is returned, this will open a new window, where the app is running
 
 
@@ -83,7 +33,7 @@ npm run dev
 List:
 - Main frameworks (React, Bootstrap)
 - APIs or third-party SDKs:
-- - SheetsJS Library for Excel File Handlong
+- - SheetsJS Library for Excel File Handling
 
 ---
 
