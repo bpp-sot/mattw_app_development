@@ -31,13 +31,17 @@ function App() {
       <div id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button</div>
       <div className ="fileuploads">   
          <h2 className ="upload-titles">Upload Baseline File</h2>
-          <input id="srcFileUpload" className = "fileUploads" type="file" name="srcFileUpload" />
-          <input id="srcFileSubmit" className = "buttons" type="submit" value="Upload"/>
+         <div>
+            <input id="srcFileUpload" className = "fileUploads" type="file" name="srcFileUpload" />
+            <input id="srcFileSubmit" className = "buttons" type="submit" value="Upload"/>
+         </div>
           <br></br>
           <br></br>
           <h2 className ="upload-titles">Upload Comparison File</h2>
-          <input id="tgtFileUpload" className ="fileUploads" type="file"  name="tgtFileUpload" />
-          <input id="tgtFileSubmit" className = "buttons" type="submit" value="Upload"/>
+          <div>
+            <input id="tgtFileUpload" className ="fileUploads" type="file"  name="tgtFileUpload" />
+            <input id="tgtFileSubmit" className = "buttons" type="submit" value="Upload"/>
+          </div>
           <br></br>
           <br></br>
           <button id="compareFilesButton" className="buttons">Compare Files</button>
