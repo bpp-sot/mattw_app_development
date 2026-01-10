@@ -23,7 +23,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <main id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button
+      <main>
         <p id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button</p>
         <div className ="fileuploads">   
           <h2 className ="upload-titles">Upload Baseline File</h2>
