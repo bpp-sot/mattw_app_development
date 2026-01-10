@@ -5,47 +5,44 @@ import ServaadaLogo from '/workspaces/mattw_app_development/Servaada Logo.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="header">
+      <header className="header">
         <img id="logoImage" src={ServaadaLogo} alt="Servaada Logo" />
         <h1 id ="pageTitle"> File Comparison Tool </h1>
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
+      </header>
       <Navbar expand="lg" className="topnav" >
         <Container>
           <Navbar.Brand href="#home">Servaada File Comparison</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">This Worked</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Previous Comparisons</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button</div>
-      <div className ="fileuploads">   
-         <h2 className ="upload-titles">Upload Baseline File</h2>
-         <div>
-            <input id="srcFileUpload" className = "fileUploads" type="file" name="srcFileUpload" />
-            <input id="srcFileSubmit" className = "buttons" type="submit" value="Upload"/>
-         </div>
-          <br></br>
-          <br></br>
-          <h2 className ="upload-titles">Upload Comparison File</h2>
+      <main id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button
+        <p id ="pageinformation">Upload your chosen files below, and click "Compare Files" Button</p>
+        <div className ="fileuploads">   
+          <h2 className ="upload-titles">Upload Baseline File</h2>
           <div>
-            <input id="tgtFileUpload" className ="fileUploads" type="file"  name="tgtFileUpload" />
-            <input id="tgtFileSubmit" className = "buttons" type="submit" value="Upload"/>
+              <input id="srcFileUpload" className = "fileUploads" type="file" name="srcFileUpload" />
+              <input id="srcFileSubmit" className = "buttons" type="submit" value="Upload"/>
           </div>
-          <br></br>
-          <br></br>
-          <button id="compareFilesButton" className="buttons">Compare Files</button>
-      </div>
+            <br></br>
+            <br></br>
+            <h2 className ="upload-titles">Upload Comparison File</h2>
+            <div>
+              <input id="tgtFileUpload" className = "fileUploads" type="file"  name="tgtFileUpload" />
+              <input id="tgtFileSubmit" className = "buttons" type="submit" value="Upload"/>
+            </div>
+            <br></br>
+            <br></br>
+            <button id="compareFilesButton" className="buttons">Compare Files</button>
+        </div>
+      </main>
       <footer id="footer" class="bg-light text-black pt-4 pb-2">
         <div class="container">
             <div class="row">
