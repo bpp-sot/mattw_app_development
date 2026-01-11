@@ -11,7 +11,7 @@ function App() {
   const [srcStatus, setSrcStatus] = useState('');
   const [tgtStatus, setTgtStatus] = useState('');
 
-  // Refs if you want to clear the inputs after submit
+  // Refs to clear the inputs after submit
   const srcInputRef = useRef(null);
   const tgtInputRef = useRef(null);
 
@@ -29,7 +29,7 @@ function App() {
       setStatus('Invalid file type. Please upload an Excel file (.xls or .xlsx).');
       return false;
     }
-    setStatus('Valid file type. You can proceed with the upload.');
+    setStatus('Valid file type. You can proceed with comparison.');
     return true;
   }
 
@@ -82,11 +82,12 @@ function App() {
 
   return (
     <>
+      {/* Header */} 
       <header className="header">
         <img id="logoImage" src={ServaadaLogo} alt="Servaada Logo" />
         <h1 id="pageTitle">File Comparison Tool</h1>
       </header>
-
+      {/* Navbar */} 
       <Navbar expand="lg" className="topnav">
         <Container>
           <Navbar.Brand href="#home">Servaada File Comparison</Navbar.Brand>
@@ -98,14 +99,13 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      {/* Main Body */} 
       <main>
         <p id="pageinformation">
           Upload your chosen files below, and click "Compare Files" Button
         </p>
         <br />
-
-        {/* Baseline upload */}
+        {/* Baseline upload */} 
         <form onSubmit={handleUploadSubmit}>
           <h2>Upload Baseline File:</h2>
           <input
@@ -117,13 +117,10 @@ function App() {
             ref={srcInputRef}
             required
           />
-          <button id="srcFileSubmit" className="buttons" type="submit">Upload</button>
           <br />
           <span id="srcFileStatus" className="status">{srcStatus}</span>
         </form>
-
         <br />
-
         {/* Comparison upload */}
         <form onSubmit={handleUploadSubmit}>
           <h2>Upload Comparison File:</h2>
@@ -136,20 +133,18 @@ function App() {
             ref={tgtInputRef}
             required
           />
-          <button id="tgtFileSubmit" className="buttons" type="submit">Upload</button>
           <br />
           <span id="tgtFileStatus" className="status"> {tgtStatus}</span>
         </form>
-
         <br />
-
+        {/* Compare Files Button */} 
         <div>
           <button id="compareFilesButton" className="buttons" onClick={handleCompare}>
             Compare Files
           </button>
         </div>
       </main>
-
+      {/* Footer */}
       <footer id="footer" className="bg-light text-black pt-4 pb-2">
         <div className="container">
           <div className="row">
@@ -162,9 +157,9 @@ function App() {
             <div className="col-md-4">
               <h5>Quick Links</h5>
               <ul className="list-unstyled text-black">
-                <li>https://www.wipro.com/servaada/Home</li>
-                <li>https://www.wipro.com/applications/Applications</li>
-                <li>https://www.wipro.com/contact-wipro/Contact</li>
+                <li><a href="https://www.wipro.com/servaada/" class="text-black">Home</a></li>
+                <li><a href="https://www.wipro.com/applications/" class="text-black">Applications</a></li>
+                <li><a href="https://www.wipro.com/contact-wipro/" class="text-black">Contact</a></li>
               </ul> 
             </div>
             <div className="text-center">
